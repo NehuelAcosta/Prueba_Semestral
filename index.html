@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prueba Semestral</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1 id="navbarHeader">Rock Fest</h1>
+        </div>
+        <div id="links">
+            <a>Inicio</a>
+            <a>Entradas</a>
+            <a>Contacto</a>
+        </div>
+    </nav>
+    <hr>
+    <main>
+
+        <form action="" id="formulario">
+            <h1 id="formHeader">RESERVA 2025</h1>
+
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="cantidadEntradas">Cantidad de Entradas: </label><br>
+            <input type="number" id="cantidadEntradas" name="cantidadEntradas"><br>
+
+            <label for="tipoEntrada">Tipo de Entrada: </label><br>
+            <select id="tipoEntrada" name="tipoEntrada">
+                <option value="1000">General - $1000</option>
+                <option value="2000">VIP - $2000</option>
+                <option value="3000">Platino - $3000</option>
+            </select><br>
+
+            <label for="codigoDescuento">Codigo de Descuento: </label><br>
+            <input type="text" id="codigoDescuento" name="codigoDescuento" placeholder="Ingrese ROCK10"><br>
+
+            <div id="mensajes">
+                <input type="submit" id="btn-submit" value="Calcular Total">
+
+                <div id="mensajeDefault"></div>
+                <div id="mensajeTotal"></div>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

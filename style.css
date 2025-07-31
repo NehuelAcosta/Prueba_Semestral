@@ -1,0 +1,89 @@
+:root {
+   ---mustard: #eed21e;
+   --darkgray: rgb(63, 63, 63);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/mosaico_instrumentos.png);
+}
+
+h1 {
+    margin: 0;
+    color: var(---mustard);
+}
+
+nav {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: auto 1rem auto 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid var(---mustard);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: var(--darkgray);
+    width: 25rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+#formHeader {
+    text-align: center;
+}
+
+input, select {
+    margin-bottom: 1rem;
+}
+
+input {
+    background-color: var(--darkgray);
+}
+
+#btn-submit{
+    background-color: var(---mustard);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.errorMesage {
+    background-color: rgb(252, 40, 40);
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+.successMesage {
+    background-color: rgb(44, 156, 44);
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+.mensajeTotalStyle { /* Si le pongo el padding, el mensaje siempre se muestra, aunque este vacio */
+    background-color: rgb(50, 164, 202);
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+    width: auto;
+    border-radius: 5px;
+}
